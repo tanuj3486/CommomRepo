@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite verbose="0" name="Pan Foster Automated Smoke Tests For Institution Tab" preserve-order="true">
+
+	<test name="" preserve-order="true">
+		<classes>
+			<class name="com.qait" />
+		</classes>
+	</test>
+</suite>
