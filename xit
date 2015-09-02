@@ -1,0 +1,33 @@
+[1mdiff --git a/src/main/java/com/gale/knewton/base/BaseTest.java b/src/main/java/com/gale/knewton/base/BaseTest.java[m
+[1mindex e28c601..0596d5f 100644[m
+[1m--- a/src/main/java/com/gale/knewton/base/BaseTest.java[m
+[1m+++ b/src/main/java/com/gale/knewton/base/BaseTest.java[m
+[36m@@ -218,7 +218,7 @@[m [mpublic class BaseTest extends BaseWebComponent {[m
+ 		return new FirefoxDriver(profile);[m
+ 	}[m
+ [m
+[31m-	@Before[m
+[32m+[m	[32m/*@Before[m
+ 	public void printClassName() {[m
+ 		String className = this.getClass().getCanonicalName();[m
+ 		System.out.println("Running Test:" + className);[m
+[36m@@ -228,8 +228,8 @@[m [mpublic class BaseTest extends BaseWebComponent {[m
+ 	public void printScenarioName(Scenario scenario) {[m
+ 		System.out.println("Running scenario:" + scenario.getName());[m
+ 	}[m
+[31m-[m
+[31m-	@After[m
+[32m+[m[32m*/[m
+[32m+[m[32m/*	@After[m
+ 	public void embedScreenshot(Scenario scenario) {[m
+ 		System.out.println("scenario===" + scenario.getName());[m
+ 		if (scenario.isFailed()) {[m
+[36m@@ -255,7 +255,7 @@[m [mpublic class BaseTest extends BaseWebComponent {[m
+ 				e1.printStackTrace();[m
+ 			}[m
+ 		}[m
+[31m-	}[m
+[32m+[m	[32m}*/[m
+ [m
+ 	public static void tearDown() {[m
+ 		 driver.quit();[m

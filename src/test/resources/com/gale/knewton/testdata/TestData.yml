@@ -1,0 +1,68 @@
+Environment: qaf
+title: Andersen
+browser: firefox
+seleniumserver: local
+#seleniumserverhost: "http://jenkins.mindtap.corp.web:4444/wd/hub"
+seleniumserverhost: "http://10.0.9.31:5555/wd/hub"
+videoActivityTextContent: "This is an answer to video activity question..."
+manuallyGradableActivityMessage: "*This part of the assignment will be graded by your instructor"
+WarningMessageOnEditGradeDetails: "At least one item contributing to this score still requires a manual grade"
+pendingMessageForManualGradingActivityOnProgressApp: "Pending grading by instructor"
+MasteryMessage: "Congratulations! You have completed this section to the desired level of understanding! Please choose Continue to receive additional recommendations."
+Comment: "Score Graded Successfully"
+recepient: rahulyadav@qainfotech.net
+noMoreAttemptMessage:
+    part1: "This assignment is no longer available."
+    part2: "There are no attempts remaining."
+manualGradeScore: "0.70"
+assignmentGroupOptions:
+   option1: Practice
+   option2: Attempts
+   option3: Timed
+   option4: Scoring
+   option5: Questions
+   option6: Feedback
+
+prod:
+  url: "https://login.cengage.com"
+  instructor:
+      userName:
+         Gulati: knewton_gulati01@qai.com
+         Andersen: Knewton_andersen01@qai.com
+      password: A123456
+  student:
+      userName:
+        Gulati: Prod_stu3@qai.com
+        Andersen: Prod_stu01@qai.com
+      password: A123456
+
+qaf:
+  url: "https://s-c-login.cengage.com/cb/login.htm"
+  instructor:
+      userName:
+         Gulati: knewton_inst02@cengagetest.com
+         Andersen: knewton_automation_inst03@qai.com
+      password: A123456
+  student:
+      userName:
+         Gulati: Knewton_stu06@qai.com
+         Andersen: Auto_stud01_knewton@qai.com
+      password: A123456
+      
+3leggedAuthentication:
+  signinMessege: Sign-in to Your Knewton Profile
+  signupMessege: Create a Knewton Profile
+      
+
+chromeDriverPath: "src/test/resources/com/gale/knewton/drivers/chromedriver.exe"
+IEDriverPath: "src/test/resources/com/gale/knewton/drivers/IEDriverServer.exe"
+explicitTimeOut: 40
+propertyfilepath: "./src/test/resources/com/gale/knewton/testdata/TestData.properties"
+LessonCenterAnswers: "./src/test/resources/com/gale/knewton/testdata/lc001.ods"
+product:
+  Course:
+   Course1: "MindTap™ Sociology Instant Access for Andersen/Taylor/Logio's Sociology: The Essentials, 8th Edition"
+   Course2: "MindTapV2 Management Instant Access for Gulati/Mayo/Nohria's Management, 1st Edition"
+  send: yes
+
+  
