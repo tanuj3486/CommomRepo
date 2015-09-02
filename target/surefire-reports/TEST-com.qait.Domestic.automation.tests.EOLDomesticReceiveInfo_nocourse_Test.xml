@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="15" failures="1" name="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" time="83.737" errors="0" skipped="10">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin"/>
+    <property name="java.vm.version" value="25.51-b03"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="test" value="EOLDomesticReceiveInfo_nocourse_Test.java"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\tanujkumarvishnoi\Desktop\penfoster\latest\Automation_Scripts\attachments\EOLChecklist\EOLChecklist"/>
+    <property name="java.runtime.version" value="1.8.0_51-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\TANUJK~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_51\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\Intel\DMIX;C:\Program Files\Java\jdk1.8.0_51\bin;%MAVEN_HOME%\bin ; C:\Program Files\Sikuli X\libs. ;C:\maven\bin;C:\Users\tanujkumarvishnoi\AppData\Local\Android\android-sdk\platform-tools;C:\Program Files\nodejs\;C:\Users\tanujkumarvishnoi\Desktop\libs;C:\Ruby200\bin;C:\Users\tanujkumarvishnoi\AppData\Local\Android\android-sdk\tools;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\tanujkumarvishnoi"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="tanujkumarvishnoi"/>
+    <property name="java.class.path" value="C:\maven\bin\..\boot\plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_51\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -Dtest=EOLDomesticReceiveInfo_nocourse_Test.java"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.8.0_51"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_51\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="setup" time="10.327"/>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="launchHomePage" time="8.817"/>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="homePageactions" time="18.844"/>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="getNumberOfCourseAvailable" time="13.973"/>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="selectCourseFromAvailableCourses" time="30.058">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]&quot;}
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;HPDA0172&apos;, ip: &apos;10.0.9.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eee7cb82-b295-4a6b-af50-d23d53eaf485
+*** Element info: {Using=xpath, value=//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]&quot;}
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;HPDA0172&apos;, ip: &apos;10.0.9.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eee7cb82-b295-4a6b-af50-d23d53eaf485
+*** Element info: {Using=xpath, value=//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at com.qait.Domestic.automation.pageobjects.EOLDomesticReceiveInfo_nocourse_UI.selectCourseFromPannFosterPage(EOLDomesticReceiveInfo_nocourse_UI.java:493)
+	at com.qait.Domestic.automation.fixture.EOLDomesticReceiveInfo_nocourse_Fixture.selectCourse(EOLDomesticReceiveInfo_nocourse_Fixture.java:19)
+	at com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.selectCourseFromAvailableCourses(EOLDomesticReceiveInfo_nocourse_Test.java:102)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;HPDA0172&apos;, ip: &apos;10.0.9.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/TANUJK~1/AppData/Local/Temp/anonymous2466152230690949426webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/TANUJK~1/AppData/Local/Temp/anonymous2466152230690949426webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</failure>
+    <system-out>Yaml file not found!!!
+java.lang.NullPointerException
+</system-out>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="verifyElementsDisplayOnStep1EnrollmentProcess" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="enterStudentInformationOnStep1Page" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="redirectToThankYouPageAndClickEnrollOnLine" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="verifyElementDisplayOnPersonalInformationPage" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="enterRemaningInformationOnPersonalInformatoinPage" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="verifyredirectToPaymentInformationPage" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="verifyElementsDisplayOnPaymentInformation" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="verifyElementsDisplayOnReviewAndSubmitPage" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="verifyEditButtonOnReviewAndSubmit" time="30.058">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test" name="verifyandClickOnTermAndComtitionsDisplayOnReviewandSubmitPage" time="30.058">
+    <skipped/>
+  </testcase>
+</testsuite>

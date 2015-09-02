@@ -1,7 +1,0 @@
-#elementname: locatortype: locatorvalue
-
-title: Accredited College, High School & Career School Online | Penn Foster 
-
-img_logo: css: #phheader_1_aTopLogo
-lnk_enrollNow: css: a[title='Enroll Now']
-lnk_getInfo: css: a[title='Get Info']

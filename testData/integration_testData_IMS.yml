@@ -1,0 +1,174 @@
+browser: chrome
+appurl:  http://s-enroll.pennfoster.com/testlinks.htm
+ajax_timeout: 30
+logFilePath: logs/Reports
+
+
+##########################################################################################
+#
+#******* Payment Mode Scenarios *******
+# Enter total count of Number of Scenario in "NumberofScenario".
+# Scenario sequence should be continue like Scenario1, Scenario2, Scenario3 and so on.
+#
+#
+##########################################################################################
+
+PaymentModeScenarios:
+  NumberofScenario: "4"
+  
+  
+  #Scenario1: Full Payment; Credit or Debit Card
+  #Scenario2: Monthly Payment; By Monthly; Credit or Debit Card
+  Scenario3: Monthly Payment; By 14 days; Credit or Debit Card
+  Scenario4: Pay By Mail; Credit or Debit Card
+  
+
+ 
+
+##########################################################################################
+#
+#******* Configurations for IMS URLs Enroll Now (no course) *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: OneIteration
+# RunType: Selected
+# RunType: AllCources
+# 
+# If selected RunType as 'Selected'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+IMSURLEnrollNownocourse:
+  RunType: Selected
+  TotalCource: "10"
+  
+  SelectCourse:
+    Cource1: APPLIANCE REPAIR
+    Cource2: AROMATHERAPY CERTIFICATE
+    Cource3: ACCOUNTING A.S. DEGREE SEMESTER ONE
+    Cource4: PENN FOSTER HIGH SCHOOL
+    Cource5: BASIC ELECTRONICS
+    Cource6: BOOKKEEPING
+    Cource7: BUSINESS MANAGEMENT A.S. DEGREE SEMESTER ONE
+    Cource8: PENN FOSTER HIGH SCHOOL WITH A CONCENTRATION IN HEALTH CARE
+    Cource9: CATERER
+    Cource10: CHILD DAY CARE MANAGEMENT
+    Cource11: CRIMINAL JUSTICE A.S. DEGREE SEMESTER ONE
+    Cource12: DENTAL ASSISTANT
+    Cource13: ELECTRONICS TECHNICIAN
+    Cource14: FST160 - INTRO TO FIRE EMERGENCY SERVICES ADMINISTRATION
+    Cource15: HERBAL STUDIES CERTIFICATE
+    Cource16: LANDSCAPING TECHNOLOGY
+    Cource17: MEDICAL CODING & BILLING
+    Cource18: SPANISH
+    Cource19: SPORTS NUTRITION CERTIFICATE 
+  
+  
+  StudentInformation:
+    
+    FirstName: Moksh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: 5199710000
+    Address: 1422 Elsmere Ave
+    City: Windsor
+    State: Ontario
+    ZIP: "N8X 4G9"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+    Country: IND
+	
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Credit or Debit Card 
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  BankNumber: "123"
+  TransitNumber: "12345"
+  AccountNumber: "123456789"
+  SignDocElectronically: "no"
+  
+  
+ ##########################################################################################
+#
+#******* Configurations for IMS URL�s Receive Information (no course) *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: OneIteration
+# RunType: Selected
+# RunType: AllCources
+# 
+# If selected RunType as 'Selected'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+IMSURLReceiveInformationnocourse:
+  RunType: Selected
+  TotalCource: "10"
+  
+  SelectCourse:
+    
+    Cource1: APPLIANCE REPAIR
+    Cource2: AROMATHERAPY CERTIFICATE
+    Cource3: ACCOUNTING A.S. DEGREE SEMESTER ONE
+    Cource4: PENN FOSTER HIGH SCHOOL
+    Cource5: BASIC ELECTRONICS
+    Cource6: BOOKKEEPING
+    Cource7: BUSINESS MANAGEMENT A.S. DEGREE SEMESTER ONE
+    Cource8: PENN FOSTER HIGH SCHOOL WITH A CONCENTRATION IN HEALTH CARE
+    Cource9: CATERER
+    Cource10: CHILD DAY CARE MANAGEMENT
+    Cource11: CRIMINAL JUSTICE A.S. DEGREE SEMESTER ONE
+    Cource12: DENTAL ASSISTANT
+    Cource13: ELECTRONICS TECHNICIAN
+    Cource14: FST160 - INTRO TO FIRE EMERGENCY SERVICES ADMINISTRATION
+    Cource15: HERBAL STUDIES CERTIFICATE
+    Cource16: LANDSCAPING TECHNOLOGY
+    Cource17: MEDICAL CODING & BILLING
+    Cource18: SPANISH
+    Cource19: SPORTS NUTRITION CERTIFICATE 
+  
+  
+  StudentInformation:
+    
+    FirstName: Moksh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: 2482461109
+    Address: 925 Oak St
+    City: Scranton
+    State: Pennsylvania
+    ZIP: "18515"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"
+    Country: IND	
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Credit or Debit Card
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  AccountNumber: "123456789"
+ 

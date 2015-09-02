@@ -1,0 +1,322 @@
+browser: firefox
+appurl: http://s-enroll.pennfoster.com/testlinks.htm
+ajax_timeout: 30
+logFilePath: logs/Reports
+
+##########################################################################################
+#
+#******* Payment Mode Scenarios *******
+# Enter total count of Number of Scenario in "NumberofScenario".
+# Scenario sequence should be continue like Scenario1, Scenario2, Scenario3 and so on.
+#
+#
+##########################################################################################
+
+PaymentModeScenarios:
+  NumberofScenario: "12"
+  
+    
+  Scenario1: Full Payment; Credit or Debit Card
+  Scenario2: Full Payment; Checking or Savings Account; Savings
+  Scenario3: Full Payment; Checking or Savings Account; Checking
+  Scenario4: Monthly Payment; By Monthly; Credit or Debit Card
+  Scenario5: Monthly Payment; By Monthly; Checking or Savings Account; Checking
+  Scenario6: Monthly Payment; By Monthly; Checking or Savings Account; Savings 
+  Scenario7: Monthly Payment; By 14 days; Credit or Debit Card
+  Scenario8: Monthly Payment; By 14 days; Checking or Savings Account; Savings
+  Scenario9: Monthly Payment; By 14 days; Checking or Savings Account; Checking
+  Scenario10: Pay By Mail; Credit or Debit Card
+  Scenario11: Pay By Mail; Checking or Savings Account; Savings
+  Scenario12: Pay By Mail; Checking or Savings Account; Checking  
+  
+   
+  #Scenario1: Monthly Payment; By 14 days; Pay By Mail; Credit or Debit Card
+  #Scenario2: Monthly Payment; By 14 days; Pay By Mail; Checking or Savings Account; Savings
+  #Scenario3: Monthly Payment; By 14 days; Pay By Mail; Checking or Savings Account; Checking  
+  #Scenario4: Monthly Payment; By Monthly; Pay By Mail; Credit or Debit Card
+  #Scenario5: Monthly Payment; By Monthly; Pay By Mail; Checking or Savings Account; Savings
+  #Scenario6: Monthly Payment; By Monthly; Pay By Mail; Checking or Savings Account; Checking
+
+##########################################################################################
+#
+#******* Configurations for Domestic Site Core URL *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: Multiple
+# RunType: Single
+# 
+# 
+# If selected RunType as 'Multiple'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+SiteCoreApp:
+  RunType: Single
+  TotalActiveURL: "2"
+
+  URL: "http://stage.www.pennfoster.edu"
+  URL1: "http://stage.www.pennfoster.edu/urm.aspx?source=Q174859&url=http://stage.www.pennfoster.edu/Programs-and-Degrees/Education-and-Child-Care/Early-Childhood-Education-Associate-Degree.aspx?semkey=Q174859"
+  URL2: "http://stage.www.pennfoster.edu/urm.aspx?source=Q084069&url=http://stage.www.pennfoster.edu/Programs-and-Degrees/High-School/High-School-Diploma.aspx?semkey=Q084069"
+  URL3: "http://stage.www.pennfoster.edu/urm.aspx?source=Q084006&url=http://stage.www.pennfoster.edu/Programs-and-Degrees/Apparel-and-Textile/Dressmaking-and-Design-Career-Diploma.aspx?semkey=Q084006"
+  
+  StudentInformation:
+    FirstName: Test
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (248)246-1109
+    Address: 925 Oak St
+    City: Scranton
+    State: Pennsylvania
+    ZIP: "18515"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+  
+  PaymentMode: Checking or Savings Account
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  AccountNumber: "123456789"
+  SignDocElectronically: "no"
+
+##########################################################################################
+#
+#******* Configurations for Domestic URL�s Receive Information (no course) *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: OneIteration
+# RunType: Selected
+# RunType: AllCources
+# 
+# If selected RunType as 'Selected'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+DomesticURLReceiveInformationnocourse:
+  RunType: Selected
+  TotalCource: "1"
+  
+  SelectCourse:
+    Cource1: CERTIFIED PERSONAL TRAINER DIPLOMA
+    Cource2: CERTIFIED PERSONAL TRAINER DIPLOMA
+    Cource3: ADVANCED MEDICAL CODING CERTIFICATE
+    Cource4: PENN FOSTER HIGH SCHOOL
+    Cource5: ADVANCED MEDICAL CODING CERTIFICATE
+    Cource6: HOME INSPECTOR
+    Cource7: ADVANCED MEDICAL CODING CERTIFICATE
+    Cource8: BUSINESS MANAGEMENT B.S. DEGREE SEMESTER ONE
+    Cource9: ADVANCED MEDICAL CODING CERTIFICATE
+    Cource10: RETAIL MANAGEMENT A.S. DEGREE SEMESTER ONE
+    Cource11: PENN FOSTER HIGH SCHOOL W/ HEALTH CARE CONC.
+    Cource12: MEDICAL CODING & BILLING-CERTIFICATE
+    Cource13: DOG OBEDIENCE TRAINER/INSTRUCTOR
+    Cource14: CRIMINAL JUSTICE B.S. DEGREE SEMESTER ONE
+    Cource15: CHILD DAY CARE_ STAFFING (CONTINUING EDUCATION COURSE)
+    Cource16: VETERINARY TECHNICIAN A.S. DEGREE SEMESTER ONE
+    Cource17: EARLY CHILDHOOD EDUCATION A.S. DEGREE SEMESTER ONE
+    Cource18: BUSINESS MANAGEMENT B.S. DEGREE SEMESTER ONE
+    Cource19: SPORTS NUTRITION CERTIFICATE 
+  
+  
+  StudentInformation:
+    FirstName: Saurabh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (248)246-1109
+    Address: 925 Oak St
+    City: Scranton
+    State: Pennsylvania
+    ZIP: "18515"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Credit or Debit Card
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  AccountNumber: "123456789"
+  
+  
+##########################################################################################
+#
+#******* Configurations for Domestic URLs Enroll Now (no course) *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: OneIteration
+# RunType: Selected
+# RunType: AllCources
+# 
+# If selected RunType as 'Selected'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+DomesticURLEnrollNownocourse:
+  RunType: Selected
+  TotalCource: "19"
+  
+ 
+  
+  SelectCourse:
+    Cource1: CRIMINAL JUSTICE A.S. DEGREE SEMESTER ONE
+    Cource2: CERTIFIED PERSONAL TRAINER DIPLOMA
+    Cource3: UNDERGRADUATE CERTIFICATE IN ACCOUNTING
+    Cource4: PENN FOSTER HIGH SCHOOL
+    Cource5: LANDSCAPING TECHNOLOGY
+    Cource6: HOME INSPECTOR
+    Cource7: EARLY CHILDHOOD EDUCATION A.S. DEGREE SEMESTER ONE
+    Cource8: BUSINESS MANAGEMENT B.S. DEGREE SEMESTER ONE
+    Cource9: SPORTS NUTRITION CERTIFICATE
+    Cource10: RETAIL MANAGEMENT A.S. DEGREE SEMESTER ONE
+    Cource11: PENN FOSTER HIGH SCHOOL W/ HEALTH CARE CONC.
+    Cource12: MEDICAL CODING & BILLING-CERTIFICATE
+    Cource13: DOG OBEDIENCE TRAINER/INSTRUCTOR
+    Cource14: CRIMINAL JUSTICE B.S. DEGREE SEMESTER ONE
+    Cource15: CHILD DAY CARE_ STAFFING (CONTINUING EDUCATION COURSE)
+    Cource16: VETERINARY TECHNICIAN A.S. DEGREE SEMESTER ONE
+    Cource17: EARLY CHILDHOOD EDUCATION A.S. DEGREE SEMESTER ONE
+    Cource18: BUSINESS MANAGEMENT B.S. DEGREE SEMESTER ONE
+    Cource19: SPORTS NUTRITION CERTIFICATE
+    
+    
+
+  StudentInformation:
+    FirstName: Saurabh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (248)246-1109
+    Address: 925 Oak St
+    City: Scranton
+    State: Pennsylvania
+    ZIP: "18515"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Checking or Savings Account
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Checking
+  RoutingNumber: "031300135"
+  AccountNumber: "123456789"
+  SignDocElectronically: "yes"
+
+##########################################################################################
+#
+#******* Configurations for Domestic URL�s Receive Information  *******
+#
+##########################################################################################
+
+
+DomesticURLReceiveInformation:
+  StudentInformation:
+    FirstName: Saurabh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (248)246-1109
+    Address: 925 Oak St
+    City: Scranton
+    State: Pennsylvania
+    ZIP: "18515"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card
+
+  PaymentMode: Checking or Savings Account
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  AccountNumber: "123456789"
+  
+
+##########################################################################################
+#
+#******* Configurations for Domestic URL�s Enroll Now  *******
+#
+##########################################################################################
+
+
+DomesticURLEnrollNow:
+  StudentInformation:
+    FirstName: Saurabh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (248)246-1109
+    Address: 925 Oak St
+    City: Scranton
+    State: Pennsylvania
+    ZIP: "18515"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Credit or Debit Card
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  AccountNumber: "123456789"
+  SignDocElectronically: "yes"
+  
+
+  
+##########################################################################################
+#
+#******* Configurations for Email Module  *******
+#
+##########################################################################################
+
+results:
+   sendEmail: "yes"
+   recipients: 
+       recipient1: tanujkumarvishnoi@qainfotech.net
+

@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/10</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 01 15:16:39 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>83 seconds (83049 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.selectCourseFromAvailableCourses()'><b>selectCourseFromAvailableCourses</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test<br/>
+<a href="#Output-16185484" onClick='toggleBox("Output-16185484", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16185484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16185484">
+Tue, 1 Sep 2015 15:17:31 IST  ########## Start Select Course From Available Courses STARTS ###########
+<br><br/>
+Tue, 1 Sep 2015 15:17:31 IST  Select a course from dropdown - Pass
+<br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]&quot;}
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;HPDA0172&apos;, ip: &apos;10.0.9.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eee7cb82-b295-4a6b-af50-d23d53eaf485
+*** Element info: {Using=xpath, value=//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at com.qait.Domestic.automation.pageobjects.EOLDomesticReceiveInfo_nocourse_UI.selectCourseFromPannFosterPage(EOLDomesticReceiveInfo_nocourse_UI.java:493)
+	at com.qait.Domestic.automation.fixture.EOLDomesticReceiveInfo_nocourse_Fixture.selectCourse(EOLDomesticReceiveInfo_nocourse_Fixture.java:19)
+	at com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.selectCourseFromAvailableCourses(EOLDomesticReceiveInfo_nocourse_Test.java:102)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;HPDA0172&apos;, ip: &apos;10.0.9.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/TANUJK~1/AppData/Local/Temp/anonymous2466152230690949426webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/TANUJK~1/AppData/Local/Temp/anonymous2466152230690949426webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16185484", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16185484'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]&quot;}
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;HPDA0172&apos;, ip: &apos;10.0.9.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: eee7cb82-b295-4a6b-af50-d23d53eaf485
+*** Element info: {Using=xpath, value=//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at com.qait.Domestic.automation.pageobjects.EOLDomesticReceiveInfo_nocourse_UI.selectCourseFromPannFosterPage(EOLDomesticReceiveInfo_nocourse_UI.java:493)
+	at com.qait.Domestic.automation.fixture.EOLDomesticReceiveInfo_nocourse_Fixture.selectCourse(EOLDomesticReceiveInfo_nocourse_Fixture.java:19)
+	at com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.selectCourseFromAvailableCourses(EOLDomesticReceiveInfo_nocourse_Test.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;ctl00_ctl00_MasterContentPlaceHolder_NestedMasterContentPlaceHolder_Form_ddlProgram&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;HPDA0172&apos;, ip: &apos;10.0.9.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/TANUJK~1/AppData/Local/Temp/anonymous2466152230690949426webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/TANUJK~1/AppData/Local/Temp/anonymous2466152230690949426webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</pre></div></td>
+<td>30</td>
+<td>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test@ba2a48</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.getNumberOfCourseAvailable()'><b>getNumberOfCourseAvailable</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test<br/>
+<a href="#Output-8784279" onClick='toggleBox("Output-8784279", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8784279" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8784279">
+Tue, 1 Sep 2015 15:17:17 IST  ########## Start Get Number Of Course Available STARTS ###########
+<br><br/>
+Tue, 1 Sep 2015 15:17:28 IST Total number of Course under Receive Information (No course) is --] 136 - Pass
+<br><br/>
+Tue, 1 Sep 2015 15:17:31 IST  ########## Start Get Number Of Course Available ENDS ###########
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test@ba2a48</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.homePageactions()'><b>homePageactions</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test<br/>
+<a href="#Output-20157453" onClick='toggleBox("Output-20157453", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20157453" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20157453">
+Tue, 1 Sep 2015 15:16:59 IST  ########## Start Launch Home Page STARTS ###########
+<br><br/>
+Tue, 1 Sep 2015 15:17:17 IST  ########## Start Launch Home Page ENDS ###########
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test@ba2a48</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.launchHomePage()'><b>launchHomePage</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test<br/>
+<a href="#Output-10707178" onClick='toggleBox("Output-10707178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10707178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10707178">
+Tue, 1 Sep 2015 15:16:50 IST  ########## Start Launch Home Page STARTS ###########
+<br><br/>
+Tue, 1 Sep 2015 15:16:59 IST  ########## Start Launch Home Page ENDS ###########
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test@ba2a48</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.setup()'><b>setup</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test<br/>
+<a href="#Output-31803354" onClick='toggleBox("Output-31803354", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31803354" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31803354">
+Tue, 1 Sep 2015 15:16:39 IST  ########## Start browser session STARTS ###########
+<br><br/>
+Tue, 1 Sep 2015 15:16:50 IST  ########## Start browser session ENDS ###########
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test@ba2a48</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.enterRemaningInformationOnPersonalInformatoinPage()'><b>enterRemaningInformationOnPersonalInformatoinPage</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.enterStudentInformationOnStep1Page()'><b>enterStudentInformationOnStep1Page</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.redirectToThankYouPageAndClickEnrollOnLine()'><b>redirectToThankYouPageAndClickEnrollOnLine</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.verifyEditButtonOnReviewAndSubmit()'><b>verifyEditButtonOnReviewAndSubmit</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.verifyElementDisplayOnPersonalInformationPage()'><b>verifyElementDisplayOnPersonalInformationPage</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.verifyElementsDisplayOnPaymentInformation()'><b>verifyElementsDisplayOnPaymentInformation</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.verifyElementsDisplayOnReviewAndSubmitPage()'><b>verifyElementsDisplayOnReviewAndSubmitPage</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.verifyElementsDisplayOnStep1EnrollmentProcess()'><b>verifyElementsDisplayOnStep1EnrollmentProcess</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.verifyandClickOnTermAndComtitionsDisplayOnReviewandSubmitPage()'><b>verifyandClickOnTermAndComtitionsDisplayOnReviewandSubmitPage</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test.verifyredirectToPaymentInformationPage()'><b>verifyredirectToPaymentInformationPage</b><br>Test class: com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">15</td><td class="numi">15</td><td class="numi">0</td><td class="numi">0</td><td class="numi">365.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="15">com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test<td><a href="#m1"><b>enterRemaningInformationOnPersonalInformatoinPage</b>  </a></td><td class="numi">1</td><td>1372398796395</td><td class="numi">58371</td></tr><tr class="passedodd"><td><a href="#m2"><b>enterStudentInformationOnStep1Page</b>  </a></td><td class="numi">1</td><td>1372398719991</td><td class="numi">70557</td></tr><tr class="passedodd"><td><a href="#m3"><b>getNumberOfCourseAvailable</b>  </a></td><td class="numi">1</td><td>1372398709777</td><td class="numi">3112</td></tr><tr class="passedodd"><td><a href="#m4"><b>homePageactions</b>  </a></td><td class="numi">1</td><td>1372398701135</td><td class="numi">8641</td></tr><tr class="passedodd"><td><a href="#m5"><b>launchHomePage</b>  </a></td><td class="numi">1</td><td>1372398695062</td><td class="numi">6073</td></tr><tr class="passedodd"><td><a href="#m6"><b>redirectToThankYouPageAndClickEnrollOnLine</b>  </a></td><td class="numi">1</td><td>1372398790549</td><td class="numi">338</td></tr><tr class="passedodd"><td><a href="#m7"><b>selectCourseFromAvailableCourses</b>  </a></td><td class="numi">1</td><td>1372398712890</td><td class="numi">317</td></tr><tr class="passedodd"><td><a href="#m8"><b>setup</b>  </a></td><td class="numi">1</td><td>1372398685761</td><td class="numi">9300</td></tr><tr class="passedodd"><td><a href="#m9"><b>verifyEditButtonOnReviewAndSubmit</b>  </a></td><td class="numi">1</td><td>1372398874119</td><td class="numi">113721</td></tr><tr class="passedodd"><td><a href="#m10"><b>verifyElementDisplayOnPersonalInformationPage</b>  </a></td><td class="numi">1</td><td>1372398790888</td><td class="numi">5505</td></tr><tr class="passedodd"><td><a href="#m11"><b>verifyElementsDisplayOnPaymentInformation</b>  </a></td><td class="numi">1</td><td>1372398854962</td><td class="numi">13816</td></tr><tr class="passedodd"><td><a href="#m12"><b>verifyElementsDisplayOnReviewAndSubmitPage</b>  </a></td><td class="numi">1</td><td>1372398868778</td><td class="numi">5340</td></tr><tr class="passedodd"><td><a href="#m13"><b>verifyElementsDisplayOnStep1EnrollmentProcess</b>  </a></td><td class="numi">1</td><td>1372398713208</td><td class="numi">6782</td></tr><tr class="passedodd"><td><a href="#m14"><b>verifyandClickOnTermAndComtitionsDisplayOnReviewandSubmitPage</b>  </a></td><td class="numi">1</td><td>1372398987841</td><td class="numi">62865</td></tr><tr class="passedodd"><td><a href="#m15"><b>verifyredirectToPaymentInformationPage</b>  </a></td><td class="numi">1</td><td>1372398854767</td><td class="numi">195</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:enterStudentInformationOnStep1Page</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:21:59 IST  ########## Start Enter Student Information On Step1 Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:22:00 IST  Enter Information on Step1 page - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  Enter First Name --] Saurabh
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  Enter Last Name  --] aac
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  Enter Email  --] mail282125707@pennfoster.com
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  Enter Phone Number  --] (248)246-1109
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  Enter Address  --] 925 Oak St
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  Enter City  --] Scranton
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  Enter Zip  --] 18515
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  ########## Start Enter Student Information On Step1 Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:enterRemaningInformationOnPersonalInformatoinPage</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:23:16 IST  ########## Start Enter Remaning Information On Personal Informatoin Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:23:31 IST Enter DOB on personal Inforation page MM:DD:YYY format --] 04101987
+<br><br/>
+Fri, 28 Jun 2013 11:24:14 IST  ########## Start Enter Remaning Information On Personal Informatoin Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:verifyElementDisplayOnPersonalInformationPage</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:23:10 IST  ########## Start Verify Element Display On Personal Information Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:23:16 IST Verify textboxes and Labels display on Personal Information Page  - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:23:16 IST  ########## Start Verify Element Display On Personal Information Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:selectCourseFromAvailableCourses</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:21:52 IST  ########## Start Select Course From Available Courses STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:21:52 IST  Select a course from dropdown - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:21:53 IST  Click on Continue button - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:21:53 IST  ########## Start Select Course From Available Courses ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:verifyElementsDisplayOnReviewAndSubmitPage</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:24:28 IST  ########## Start Enter CreditCard Information STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:24:33 IST Verify redirect user to review & submit page - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:24:34 IST  ########## Start Enter CreditCard Information ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:launchHomePage</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:21:35 IST  ########## Start Launch Home Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:21:41 IST  ########## Start Launch Home Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:verifyEditButtonOnReviewAndSubmit</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:24:34 IST  ########## Start Verify Edit botton On Review and Submit Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:24:34 IST  Enter Information on Step1 page - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:24:51 IST  Enter First Name --] Saurabh
+<br><br/>
+Fri, 28 Jun 2013 11:24:51 IST  Enter Last Name  --] aac
+<br><br/>
+Fri, 28 Jun 2013 11:24:51 IST  Enter Email  --] mail282125707@pennfoster.com
+<br><br/>
+Fri, 28 Jun 2013 11:24:51 IST  Enter Phone Number  --] (248)246-1109
+<br><br/>
+Fri, 28 Jun 2013 11:24:51 IST  Enter Address  --] 925 Oak St
+<br><br/>
+Fri, 28 Jun 2013 11:24:51 IST  Enter City  --] Scranton
+<br><br/>
+Fri, 28 Jun 2013 11:24:51 IST  Enter Zip  --] 18515
+<br><br/>
+Fri, 28 Jun 2013 11:24:53 IST Enter DOB on personal Inforation page MM:DD:YYY format --] 04101987
+<br><br/>
+Fri, 28 Jun 2013 11:25:35 IST  ########## Start Enter Remaning Information On Personal Informatoin Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:25:35 IST Verify Course Name display on page i.e. CERTIFIED PERSONAL TRAINER DIPLOMA - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:35 IST Verify Promo COde Link display on Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:35 IST Verify Step Text - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:36 IST Verify Footer Image Secure Transaction - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:36 IST  ########## Start Enter Remaning Information On Personal Informatoin Page ENDS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:25:36 IST  ########## Start Verify Redirect To Payment Information Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:25:36 IST Verify Mode of Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:36 IST Verify Options diplsy under Full Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:37 IST Select creadit card option display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:37 IST Verify form display under creadit card on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:44 IST Enter information in creadit card form
+<br><br/>
+Fri, 28 Jun 2013 11:25:44 IST Enter Credit Card number in creadit card form is -- ] 4111111111111111
+<br><br/>
+Fri, 28 Jun 2013 11:25:44 IST Enter CVV number in creadit card form is -- ] 000
+<br><br/>
+Fri, 28 Jun 2013 11:25:44 IST Select Expiry date of creadit card - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:25:44 IST Click on Proceed to Final Step button - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:25:44 IST  ########## Start Verify Redirect To Payment Information Page ENDS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:25:50 IST  ########## Start Enter Remaning Information On Personal Informatoin Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:25:57 IST Verify Course Name display on page i.e. CERTIFIED PERSONAL TRAINER DIPLOMA - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:57 IST Verify Promo COde Link display on Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:57 IST Verify Step Text - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:57 IST Verify Footer Image Secure Transaction - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:58 IST  ########## Start Enter Remaning Information On Personal Informatoin Page ENDS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:25:58 IST  ########## Start Verify Redirect To Payment Information Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:25:58 IST Verify Mode of Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:58 IST Verify Options diplsy under Full Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:59 IST Select creadit card option display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:25:59 IST Verify form display under creadit card on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:06 IST Enter information in creadit card form
+<br><br/>
+Fri, 28 Jun 2013 11:26:06 IST Enter Credit Card number in creadit card form is -- ] 4111111111111111
+<br><br/>
+Fri, 28 Jun 2013 11:26:06 IST Enter CVV number in creadit card form is -- ] 000
+<br><br/>
+Fri, 28 Jun 2013 11:26:06 IST Select Expiry date of creadit card - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:26:06 IST Click on Proceed to Final Step button - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:26:06 IST  ########## Start Verify Redirect To Payment Information Page ENDS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:26:11 IST  ########## Start Enter Remaning Information On Personal Informatoin Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:26:19 IST Verify Course Name display on page i.e. CERTIFIED PERSONAL TRAINER DIPLOMA - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:19 IST Verify Promo COde Link display on Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:19 IST Verify Step Text - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:19 IST Verify Footer Image Secure Transaction - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:19 IST  ########## Start Enter Remaning Information On Personal Informatoin Page ENDS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:26:19 IST  ########## Start Verify Redirect To Payment Information Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:26:19 IST Verify Mode of Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:20 IST Verify Options diplsy under Full Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:20 IST Select creadit card option display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:21 IST Verify form display under creadit card on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:26:27 IST Enter information in creadit card form
+<br><br/>
+Fri, 28 Jun 2013 11:26:27 IST Enter Credit Card number in creadit card form is -- ] 4111111111111111
+<br><br/>
+Fri, 28 Jun 2013 11:26:27 IST Enter CVV number in creadit card form is -- ] 000
+<br><br/>
+Fri, 28 Jun 2013 11:26:27 IST Select Expiry date of creadit card - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:26:27 IST Click on Proceed to Final Step button - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:26:27 IST  ########## Start Verify Redirect To Payment Information Page ENDS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:26:27 IST  ########## Start Verify Edit botton On Review and Submit Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:verifyandClickOnTermAndComtitionsDisplayOnReviewandSubmitPage</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:26:27 IST  ########## Start Verify Elements Display On Review and Submit Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:27:30 IST  Final Student ID is 40503083 - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:27:30 IST  ########## Start Verify Elements Display On Review and Submit Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:setup</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:21:25 IST  ########## Start browser session STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:21:35 IST  ########## Start browser session ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:getNumberOfCourseAvailable</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:21:49 IST  ########## Start Get Number Of Course Available STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:21:49 IST Total number of Course under Receive Information (No course) is --] 184 - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:21:52 IST  ########## Start Get Number Of Course Available ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:verifyElementsDisplayOnStep1EnrollmentProcess</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:21:53 IST  ########## Start Verify Elements Display On Step1 Enrollment Process STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:21:59 IST  Fill form for Course --] CERTIFIED PERSONAL TRAINER DIPLOMA - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:21:59 IST  Verify Elements display on Step1 page - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:21:59 IST  ########## Start Verify Elements Display On Step1 Enrollment Process ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:homePageactions</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:21:41 IST  ########## Start Launch Home Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:21:41 IST Click on Receive Information (No course) - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:21:49 IST  Penn Foster School Image Verify - Pass
+<br><br/>
+Fri, 28 Jun 2013 11:21:49 IST  ########## Start Launch Home Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:redirectToThankYouPageAndClickEnrollOnLine</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:23:10 IST  ########## Start Redirect To ThankYou Page And Click Enroll OnLine STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST Verify thankyou page displayed  - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST Click on Enroll OnLine Link  - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:23:10 IST  ########## Start Redirect To ThankYou Page And Click Enroll OnLine ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:verifyElementsDisplayOnPaymentInformation</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:24:14 IST  ########## Start Verify Redirect To Payment Information Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:24:15 IST Verify Mode of Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:18 IST Verify Options diplsy under Full Payment display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:18 IST Select creadit card option display on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:21 IST Verify form display under creadit card on Payment Information Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:28 IST Enter information in creadit card form
+<br><br/>
+Fri, 28 Jun 2013 11:24:28 IST Enter Credit Card number in creadit card form is -- ] 4111111111111111
+<br><br/>
+Fri, 28 Jun 2013 11:24:28 IST Enter CVV number in creadit card form is -- ] 000
+<br><br/>
+Fri, 28 Jun 2013 11:24:28 IST Select Expiry date of creadit card - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:24:28 IST Click on Proceed to Final Step button - PASS 
+<br><br/>
+Fri, 28 Jun 2013 11:24:28 IST  ########## Start Verify Redirect To Payment Information Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>com.qait.Domestic.automation.tests.EOLDomesticReceiveInfo_nocourse_Test:verifyredirectToPaymentInformationPage</h2>
+<div style="padding-left:3em">
+Fri, 28 Jun 2013 11:24:14 IST  ########## Start Enter Remaning Information On Personal Informatoin Page STARTS ###########
+<br><br/>
+Fri, 28 Jun 2013 11:24:14 IST Verify Course Name display on page i.e. CERTIFIED PERSONAL TRAINER DIPLOMA - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:14 IST Verify Promo COde Link display on Page - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:14 IST Verify Step Text - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:14 IST Verify Footer Image Secure Transaction - PASS
+<br><br/>
+Fri, 28 Jun 2013 11:24:14 IST  ########## Start Enter Remaning Information On Personal Informatoin Page ENDS ###########
+<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

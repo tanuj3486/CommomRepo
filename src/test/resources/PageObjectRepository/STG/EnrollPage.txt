@@ -1,3 +1,0 @@
-#elementname: locatortype: locatorvalue
-
-title: Penn Foster - Enroll

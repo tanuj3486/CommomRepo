@@ -1,0 +1,226 @@
+browser: chrome
+appurl:  http://s-enroll.pennfoster.com/testlinks.htm
+ajax_timeout: 30
+logFilePath: logs/Reports
+
+
+##########################################################################################
+#
+#******* Payment Mode Scenarios *******
+# Enter total count of Number of Scenario in "NumberofScenario".
+# Scenario sequence should be continue like Scenario1, Scenario2, Scenario3 and so on.
+#
+#
+##########################################################################################
+
+PaymentModeScenarios:
+  NumberofScenario: "8"
+  
+
+  Scenario1: Full Payment; Credit or Debit Card
+  Scenario2: Full Payment; Checking or Savings Account
+  Scenario3: Pay By Mail; Credit or Debit Card
+  Scenario4: Pay By Mail; Checking or Savings Account
+  Scenario5: Monthly Payment; By Monthly; Credit or Debit Card
+  Scenario6: Monthly Payment; By Monthly; Checking or Savings Account
+  Scenario7: Monthly Payment; By 14 days; Credit or Debit Card
+  Scenario8: Monthly Payment; By 14 days; Checking or Savings Account
+ 
+  
+##########################################################################################
+#
+#******* Configurations for Canada URL�s Receive Information (no course) *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: OneIteration
+# RunType: Selected
+# RunType: AllCources
+# 
+# If selected RunType as 'Selected'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+CanadaURLReceiveInformationnocourse:
+  RunType: Selected
+  TotalCource: "8"
+  
+  SelectCourse:
+    Cource2: CHILD DAY CARE MANAGEMENT
+    Cource1: COUNSELLING SKILLS
+    Cource3: CHILD PSYCHOLOGY
+    Cource4: COMPUTER GRAPHIC ARTIST
+    Cource5: ART
+    Cource6: CATERER
+    Cource7: PET GROOMING CERTIFICATE
+    Cource8: WELLNESS CERTIFICATE
+    Cource9: LOCKSMITHING
+    Cource10: HIGH SCHOOL
+    Cource11: LOCKSMITHING
+    Cource12: HIGH SCHOOL
+    Cource13: LOCKSMITHING
+    Cource14: HIGH SCHOOL
+  
+  
+  
+  StudentInformation:
+    FirstName: Moksh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (519)971-0000
+    Address: 1422 Elsmere Ave
+    City: Windsor
+    State: Ontario
+    ZIP: "N8X 4G9"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Credit or Debit Card
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  BankNumber: "123"
+  TransitNumber: "12345"
+  AccountNumber: "123456789"
+  SignDocElectronically: "no"
+  
+  
+##########################################################################################
+#
+#******* Configurations for Canada URL�s Enroll Now (no course) *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: OneIteration
+# RunType: Selected
+# RunType: AllCources
+# 
+# If selected RunType as 'Selected'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+CanadaURLEnrollNownocourse:
+  RunType: Selected
+  TotalCource: "12"
+  
+  SelectCourse:
+    Cource1: CHILD DAY CARE MANAGEMENT
+    Cource2: COMPUTER GRAPHIC ARTIST
+    Cource3: CHILD PSYCHOLOGY
+    Cource4: DRESSMAKING AND DESIGN
+    Cource5: HIGH SCHOOL
+    Cource6: HOLISTIC NUTRITION CERTIFICATE
+    Cource7: LOCKSMITHING
+    Cource8: MEDICAL TRANSCRIPTIONIST
+    Cource9: MEDICAL TERMINOLOGY CERTIFICATE
+    Cource10: MEDICAL ADMINISTRATIVE ASST.
+    Cource11: HIGH SCHOOL
+    Cource12: HOLISTIC NUTRITION CERTIFICATE
+  
+  
+  StudentInformation:
+    FirstName: Moksh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (519)971-0000
+    Address: 1422 Elsmere Ave
+    City: Windsor
+    State: Ontario
+    ZIP: "N8X 4G9"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Credit or Debit Card 
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  AccountType: Savings
+  RoutingNumber: "031300135"
+  BankNumber: "123"
+  TransitNumber: "12345"
+  AccountNumber: "123456789"
+  SignDocElectronically: "yes"
+  
+  
+##########################################################################################
+#
+#******* Configurations for Canada URL�s Receive Information  *******
+#
+##########################################################################################
+# Possible values for RunType
+# RunType: OneIteration
+# RunType: Selected
+# RunType: AllCources
+# 
+# If selected RunType as 'Selected'. TotalCourse Field would be mandatory.
+# Total course contain the total number of course for those script have to be run
+
+CanadaURLReceiveInformation:
+  RunType: OneIteration
+  TotalCource: "3"
+  
+  SelectCourse:
+    Cource1: CHILD DEVELOPMENT ASSOCIATE TRAINING CERTIFICATE
+    Cource2: CHILD DEVELOPMENT (CONTINUING EDUCATION COURSE)
+    Cource3: CHILD PSYCHOLOGY
+    Cource4: COMPREHENSIVE SKILLS IN READING & WRITING
+    Cource5: COMPUTER GRAPHIC ARTIST
+    Cource6: CRIMINAL JUSTICE B.S. DEGREE SEMESTER ONE
+    Cource7: CSC104 - COMPUTER APPLICATIONS
+    Cource8: COMPUTER APPLICATIONS IN ACCOUNTING - QUICKBOOKS CERTIFICATE
+    Cource9: COMPUTER APPLICATIONS IN ACCOUNTING - PEACHTREE CERTIFICATE
+    Cource10: CHILD PSYCHOLOGY
+  
+  
+  
+  StudentInformation:
+    FirstName: Moksh
+    LastName: tests
+    Email: mail
+    EmailExt: pennfoster.com
+    PrimaryPhone: (519)971-0000
+    Address: 1422 Elsmere Ave
+    City: Windsor
+    State: Ontario
+    ZIP: "N8X 4G9"  
+    DOBmonth: "04"
+    DOBday: "10"
+    DOByear: "1987"
+    CreditCardNumber: "4111111111111111"
+    CVV: "000"  
+
+# Below mentioned 2 are the possible values to select payment mode
+# Checking or Savings Account
+# Credit or Debit Card 
+
+  PaymentMode: Checking or Savings Account
+
+# Account type below mentioned are the two possible values
+# Savings
+# Checking
+
+  BankNumber: "123"
+  TransitNumber: "12345"
+  AccountNumber: "123456789"
+  SignDocElectronically: "yes"
+  
